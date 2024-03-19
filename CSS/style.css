@@ -1,0 +1,161 @@
+body {
+    font-family: Arial,"Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+h1 {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130px;
+    margin: 0;
+}
+
+nav, h2 {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,  main, footer {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+nav ul li {
+    font-size: 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#key-visual {
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+}
+
+#key-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* about セクション */
+#about .container {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about h3 {
+    text-align: center;
+}
+
+#year {
+    font-weight: bold;
+}
+
+.introduce, .carrer, .vision {
+    flex: 1;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+/* skills セクション */
+#skills .container {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills .coding, #skills .other {
+    flex: 1;
+    text-align: center;
+}
+
+/* galleryセクション */
+#gallery .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* linksセクション */
+#links ul {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+#links i {
+    font-size: 30px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*  レスポンシブ */
+@media (max-width: 980px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    #about .container, #skills .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+
+    #gallery .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #links i {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
