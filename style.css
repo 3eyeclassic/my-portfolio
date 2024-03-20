@@ -77,6 +77,11 @@ main section {
 
 #about h3 {
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.my-name {
+    font-size: 1.3rem;
 }
 
 #year {
