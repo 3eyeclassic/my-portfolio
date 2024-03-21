@@ -77,6 +77,11 @@ main section {
 
 #about h3 {
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.my-name {
+    font-size: 1.3rem;
 }
 
 #year {
@@ -105,6 +110,12 @@ main section {
     text-align: center;
 }
 
+#skills .tools {
+    font-weight: bold;
+    background:linear-gradient(transparent 70%, #ffff66 0%);;
+    margin-bottom: 3px;
+}
+
 /* galleryセクション */
 #gallery .container{
     display: grid;
@@ -122,7 +133,11 @@ main section {
 #links ul {
     list-style: none;
     justify-content: space-around;
-    display: flex;
+    text-align: center;
+}
+
+#links li {
+    display: inline;
 }
 
 #links i {
